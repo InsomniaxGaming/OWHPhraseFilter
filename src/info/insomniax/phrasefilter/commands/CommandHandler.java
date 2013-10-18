@@ -1,10 +1,15 @@
 package info.insomniax.phrasefilter.commands;
 
-public class CommandHandler {
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 
-}
-public final class CommandHandler extends CommandExecutor{
-	public boolean onCommand(){
-		
+public class CommandHandler implements CommandExecutor{
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
+	{
+		return false;
 	}
+	
 }
