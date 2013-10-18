@@ -6,13 +6,13 @@ import net.milkbowl.vault.permission.Permission;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.RegisteredServiceProvider;
 
-public class PermissionsHandler {
+public class Permissions {
 	
 	static String BASE_NODE = "owhphrasefilter";
 	OWHPhraseFilter myPlugin;
 	private static Permission permission = null;
 	
-	public PermissionsHandler(OWHPhraseFilter instance)
+	public Permissions(OWHPhraseFilter instance)
 	{
 		myPlugin = instance;
 	}
@@ -31,7 +31,7 @@ public class PermissionsHandler {
 		return permission.has(sender, node);
 	}
 	
-	public String getBaseNode()
+	public static String getBaseNode()
 	{
 		return BASE_NODE;
 	}
