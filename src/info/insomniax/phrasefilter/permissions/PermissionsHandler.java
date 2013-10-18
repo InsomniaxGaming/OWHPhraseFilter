@@ -8,6 +8,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 
 public class PermissionsHandler {
 	
+	static String BASE_NODE = "owhphrasefilter";
 	OWHPhraseFilter myPlugin;
 	private static Permission permission = null;
 	
@@ -28,5 +29,10 @@ public class PermissionsHandler {
 	public boolean has(CommandSender sender, String node)
 	{
 		return permission.has(sender, node);
+	}
+	
+	public String getBaseNode()
+	{
+		return BASE_NODE;
 	}
 }
