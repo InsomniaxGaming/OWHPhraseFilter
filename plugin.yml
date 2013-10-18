@@ -1,0 +1,4 @@
+name: OWHAntiMineChat
+description: "Filter out those awful Minechat spam messages!"
+main: info.insomniax.phrasefilter.core.OWHPhraseFilter
+version: 0.1
